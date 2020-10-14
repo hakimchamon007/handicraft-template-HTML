@@ -95,8 +95,12 @@ body {
 }
 
 
-h1, h2, h3, h4, h5, h6{
-	font-family: 'RobotoRegular';
+h1, h2, h3, h5, h6{
+	font-family: "RobotoBold";
+}
+
+h4{
+	font-family: "RobotoMedium";
 }
 
 p {
@@ -104,13 +108,11 @@ p {
 }
 
 .site-logo img {
-	padding: 30px 0px 0px 50px;
+	padding: 30px 0px 0px 0px;
 }
 
 .handicraft-site-header-description {
 	margin-top: 20%;
-	left: 60px;
-	right: 0;
 	position: absolute;
 }
 
@@ -143,12 +145,12 @@ p {
 
 .banner-button {
 	font-family: "RobotoBold";
-	font-size: 30px;
+	font-size: 18px;
 	color: #FFFFFF;
 	letter-spacing: 0.33px;
 	line-height: 35px;
 	text-transform: uppercase;
-	padding: 10px 25px;
+	padding: 10px 30px;
 	background: #E74F00;
 	display: inline-block;
 	margin-top: 20px;
@@ -159,24 +161,27 @@ p {
     color: black;
 }
 
+.view-demo-icon {
+	padding-left: 10px;
+}
+
 .handicraft-site-header-images {
 	background: #FFBE2F;
 	border-radius: 0 0 0 50px;
 	width: 100%;
 	height: auto;
-	padding-bottom: 50px;
+	padding: 20px 20px 50px 20px;
 }
 
 .handicraft-site-description-left {
-	padding: 30px 0px 0px 30px;
+
 }
 
 .handicraft-site-description-right {
-	padding: 30px 0px 0px 30px;
+
 }
 
-.handicraft-site-description-left p, .handicraft-site-description-right p {
-	font-family: "RobotoMedium";
+.handicraft-site-description-left h4, .handicraft-site-description-right h4 {
 	font-size: 25px;
 	color: #2E2E2E;
 	line-height: 29px;
@@ -200,14 +205,15 @@ p {
 
 .handicraft-site-description-left img, .handicraft-site-description-right img {
 	width: 100%;
+	padding-bottom: 50px;
 }
 
 
 section.homepage-innerpage-area {
-	margin-top: 50px;
+	margin-top: 100px;
 }
 
-.homepage-innerpage-area h2, .core-features-area h2 {
+.homepage-innerpage-area h2 {
 	font-family: "RobotoBold";
 	font-size: 45px;
 	letter-spacing: .5px;
@@ -215,6 +221,7 @@ section.homepage-innerpage-area {
 	color: #282828;
 	text-transform: uppercase;
 	text-align: center;
+	margin-bottom: 50px;
 }
 
 .awesome {
@@ -228,21 +235,89 @@ section.homepage-innerpage-area {
 }
 
 
-.demos-area ul li.active {
+.demos-area ul li {
 	width: 50%;
 }
 
-.demos-area ul li.active a {
-	color: #FFF;
-	background: #FFBE2F;
+.demos-area ul li a {
+	font-family: "RobotoMedium";
+	font-size: 30px;
+	color: #2E2E2E !important;
+	letter-spacing: -0.33px;
 	text-align: center;
-	padding: 10px 0px;
-	font-size: 18px;
-	font-weight: bold;
+	background: #FFFFFF !important;
+	border: none !important;
 }
 
-.core-features-area {
+.demos-area ul li a.active {
+	font-family: "RobotoMedium";
+	font-size: 30px;
+	color: #2E2E2E !important;
+	letter-spacing: -0.33px;
+	text-align: center;
+	background: #FFBE2F !important;
+	border: none !important;
+}
+
+.demos-area ul li a.focus {
+	border: none !important;
+}
+
+.home-inner-page {
+	position: relative;
 	margin-top: 50px;
+	box-shadow: 0 10px 30px 0 rgba(0,0,0,0.20);
+}
+
+.home-inner-page img {
+	display: block;
+}
+
+.home-inner-page-middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.home-inner-page:hover img {
+	opacity: 0.3;
+}
+
+.home-inner-page:hover .home-inner-page-middle {
+	opacity: 1;
+}
+
+.home-inner-page-text {
+	background-color: #333332;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+	text-transform: uppercase;
+}
+
+
+	/*background: #DE3339;*/
+
+
+.core-features-area {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	/*box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);*/
+}
+
+.core-features-area h2 {
+	font-family: "RobotoBold";
+	font-size: 45px;
+	letter-spacing: .5px;
+	line-height: 53px;
+	color: #282828;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .core-features-area p {
@@ -268,48 +343,58 @@ section.homepage-innerpage-area {
     margin-bottom: 10px;
 }
 
-.core-features p {
+.core-features h6 {
     font-family: "RobotoMedium";
-    font-size: 24px;
+    font-size: 16px;
     color: #2E2E2E;
     letter-spacing: -0.27px;
     text-align: center;
     padding-bottom: 15px;
     text-transform: uppercase;
+	height: 40px;
+}
+
+.features-line-two {
+	padding-top: 30px;
 }
 
 .handicraft-footer {
-    padding: 80px;
+    padding: 50px 0px 100px 0px;
     text-align: center;
     background-color: #FFBE2F;
 }
 
-.handicraft-footer p {
+.handicraft-footer h4 {
     font-family: "RobotoMedium";
     font-size: 24px;
     color: #2E2E2E;
     letter-spacing: -0.27px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 0px;
+	padding-bottom: 20px;
 }
 
-.footer-button {
-    font-family: "RobotoBold";
-    font-size: 30px;
-    color: #FFFFFF;
-    letter-spacing: 0.33px;
-    line-height: 35px;
-    text-transform: uppercase;
-    padding: 15px 30px;
-    background: #E74F00;
-    display: inline-block;
-    margin-top: 10px;
+.purchase-now-button-area {
+	margin-top: 50px;
+	text-align: center;
 }
 
-.footer-button:hover {
-    text-decoration: none;
-    color: black;
+.purchase-now-button {
+	font-family: "RobotoBold";
+	font-size: 30px;
+	color: #FFFFFF;
+	letter-spacing: 0.33px;
+	line-height: 35px;
+	text-transform: uppercase;
+	padding: 15px 30px;
+	background: #E74F00;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.purchase-now-button:hover {
+	text-decoration: none;
+	color: black;
 }
 
 

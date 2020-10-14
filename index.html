@@ -18,9 +18,9 @@
 
 
 <section class="handicraft-header-area">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
-			<div class="col-md-6 pr-0">
+			<div class="col-md-6">
 				<div class="site-logo">
 					<img src="assets/images/L.png" />
 				</div>
@@ -29,24 +29,24 @@
 					<h1>e-commerce</h1>
 					<h1><span class="handicraft">handicraft</span> template</h1>
 					<h1>universe.</h1>
-					<a href="" class="banner-button">view demo <span class="view-demo-icon"></span></a>
+					<a href="" class="banner-button">view demo <span class="view-demo-icon"><i class="fa fa-arrow-down"></i></span></a>
 				</div>
 			</div>
-			<div class="col-md-6 pl-0 pr-0">
-				<div class="handicraft-site-header-images d-flex">
+			<div class="col-md-6">
+				<div class="handicraft-site-header-images">
 					<div class="row">
-						<div class="col-md-6 pr-0">
+						<div class="col-md-6">
 							<div class="handicraft-site-description-left">
-								<p>Demo Website<span class="demo-website-inner-page">3</span></p>
-								<img src="assets/images/site-image-5.png" />
-								<img src="assets/images/site-image-2.jpg" />
+								<h4>Demo Website<span class="demo-website-inner-page">3</span></h4>
+								<img class="img-fluid" src="assets/images/site-image-5.png" />
+								<img class="img-fluid" src="assets/images/site-image-2.jpg" />
 							</div>
 						</div>
-						<div class="col-md-6 pl-0">
+						<div class="col-md-6">
 							<div class="handicraft-site-description-right">
-								<p>Inner Page<span class="demo-website-inner-page">30</span></p>
-								<img src="assets/images/site-image-3.jpg" />
-								<img src="assets/images/site-image-4.jpg" />
+								<h4>Inner Page<span class="demo-website-inner-page">30</span></h4>
+								<img class="img-fluid" src="assets/images/site-image-3.jpg" />
+								<img class="img-fluid" src="assets/images/site-image-4.jpg" />
 							</div>
 						</div>
 					</div>
@@ -64,27 +64,78 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="demos-area">
-					<ul class="nav nav-tabs" role="tablist">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
 						<li class="nav-item">
-							<a class="nav-link active" href="#profile" role="tab" data-toggle="tab">profile</a>
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#homepage" role="tab" aria-controls="home" aria-selected="true">Homepage</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#buzz" role="tab" data-toggle="tab">buzz</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#references" role="tab" data-toggle="tab">references</a>
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#innerpage" role="tab" aria-controls="profile" aria-selected="false">Innerpage</a>
 						</li>
 					</ul>
-
-					<!-- Tab panes -->
-					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane fade in active" id="profile">...</div>
-						<div role="tabpanel" class="tab-pane fade" id="buzz">bbb</div>
-						<div role="tabpanel" class="tab-pane fade" id="references">ccc</div>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="homepage" role="tabpanel" aria-labelledby="home-tab">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="home-inner-page">
+										<img class="img-fluid" src="assets/images/site-image-1.jpg" />
+										<div class="home-inner-page-middle">
+											<div class="home-inner-page-text">live demo</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="home-inner-page">
+										<img class="img-fluid" src="assets/images/site-image-1.jpg" />
+										<div class="home-inner-page-middle">
+											<div class="home-inner-page-text">live demo</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="home-inner-page">
+										<img class="img-fluid" src="assets/images/site-image-1.jpg" />
+										<div class="home-inner-page-middle">
+											<div class="home-inner-page-text">live demo</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="innerpage" role="tabpanel" aria-labelledby="profile-tab">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="home-inner-page">
+										<img class="img-fluid" src="assets/images/site-image-1.jpg" />
+										<div class="home-inner-page-middle">
+											<div class="home-inner-page-text">live demo</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="home-inner-page">
+										<img class="img-fluid" src="assets/images/site-image-1.jpg" />
+										<div class="home-inner-page-middle">
+											<div class="home-inner-page-text">live demo</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="home-inner-page">
+										<img class="img-fluid" src="assets/images/site-image-1.jpg" />
+										<div class="home-inner-page-middle">
+											<div class="home-inner-page-text">live demo</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="purchase-now-button-area">
+		<a href="" class="purchase-now-button">purchase now</a>
 	</div>
 </section>
 
@@ -98,26 +149,26 @@
 			<div class="row">
 				<div class="col-md-3">
 					<div class="core-features">
-						<img src="assets/images/icons/icons8-bootstrap-480.png" />
-						<p>bootstrap 4</p>
+						<img class="img-fluid" src="assets/images/icons/icons8-bootstrap-480.png" />
+						<h6>bootstrap 4</h6>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="core-features">
-						<img src="assets/images/icons/icons8-html-5-480.png" />
-						<p>html 5</p>
+						<img class="img-fluid" src="assets/images/icons/icons8-html-5-480.png" />
+						<h6>html 5</h6>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="core-features">
-						<img src="assets/images/icons/icons8-css3-480.png" />
-						<p>css 3</p>
+						<img class="img-fluid" src="assets/images/icons/icons8-css3-480.png" />
+						<h6>css 3</h6>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="core-features">
-						<img src="assets/images/icons/icons8-sass-480.png" />
-						<p>sass</p>
+						<img class="img-fluid" src="assets/images/icons/icons8-sass-480.png" />
+						<h6>sass</h6>
 					</div>
 				</div>
 			</div>
@@ -126,20 +177,20 @@
 			<div class="row">
 				<div class="col-md-3">
 					<div class="core-features">
-						<img src="assets/images/icons/Google-Fonts-Logo.png" />
-						<p>custom google font</p>
+						<img class="img-fluid" src="assets/images/icons/Google-Fonts-Logo.png" />
+						<h6>custom google font</h6>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="core-features">
-						<img src="assets/images/icons/icons8-menu-240.png" />
-						<p>mega menus</p>
+						<img class="img-fluid" src="assets/images/icons/icons8-menu-240.png" />
+						<h6>mega menus</h6>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="core-features">
-						<img src="assets/images/icons/responsive logo.png" />
-						<p>fully responsive</p>
+						<img class="img-fluid" src="assets/images/icons/responsive logo.png" />
+						<h6>fully responsive</h6>
 					</div>
 				</div>
 			</div>
@@ -154,8 +205,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<p>buy handicraft e-commerce theme</p>
-				<a href="" class="footer-button">purchase now <span class="view-demo-icon"></span></a>
+				<h4>buy handicraft e-commerce theme</h4>
+				<a href="" class="purchase-now-button">purchase now</a>
 			</div>
 		</div>
 	</div>
